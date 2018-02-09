@@ -15,24 +15,30 @@ class ParkoursViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
-
     
     private var parkours: [Parkour] = []
     private var parkour: Parkour?
     var db = Firestore.firestore()
+    var difficulty: String?
+    //set the image URL
 
 
-    
-    private var listener: ListenerRegistration?
-    
+
+
+
+        
     override func viewDidLoad() {
+        
         tableView.dataSource = self
         tableView.delegate = self
+        print("difficiulty2: \(difficulty)")
         super.viewDidLoad()
+        
 
       
     }
     override func viewWillAppear(_ animated: Bool) {
+    
         db.collection("parkours").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")

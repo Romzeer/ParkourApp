@@ -11,26 +11,41 @@ import UIKit
 class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var parkourImageView: UIImageView!
-    @IBOutlet weak var wrLabel: UILabel!
+    
     @IBOutlet weak var metroLabel: UILabel!
-    @IBOutlet weak var lvlLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var cellView: UIView!
+    
+    
+    //create a URL Session, this time a shared one since its a simple app
+    let session = URLSession.shared
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
+  
+    
     func populate(parkour: Parkour) {
         
         // Displaying data, part two
         nameLabel.text = parkour.name
-        lvlLabel.text = parkour.difficulte
+       
         metroLabel.text = parkour.metro
-        wrLabel.text = parkour.wr
+      
+        let imageUrl = URL(string: parkour.image)
+        DispatchQueue.global().async {
+            let data = try? Data(contentsOf: imageUrl!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+            DispatchQueue.main.async {
+                self.parkourImageView.image = UIImage(data: data!)
+            }
+        }
+       
+        
         
     }
+    
 
  
 

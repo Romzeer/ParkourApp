@@ -12,11 +12,6 @@ import GoogleSignIn
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-
-
-
-
-
 class ViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet weak var FirstNameTextField: UITextField!
@@ -44,9 +39,18 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
 
         // Do any additional setup after loading the view, typically from a nib.
         //ValidAccountButton.frame = CGRect(x: 160, y: 100, width: 50, height: 50)
-        ValidAccountButton.layer.cornerRadius = 0.5 * ValidAccountButton.bounds.size.width
-        ValidAccountButton.clipsToBounds = true
+        ValidAccountButton.layer.cornerRadius = 3
+        ValidAccountButton.backgroundColor = UIColor(red: 59.0 / 255.0, green: 89.0 / 255.0, blue: 152.0 / 255.0, alpha: 1.0)
         
+        signInButton.layer.cornerRadius = 3
+        // (214,45,32)
+        signInButton.backgroundColor = UIColor(red: 214.0 / 255.0, green: 45.0 / 255.0, blue: 32.0 / 255.0, alpha: 1.0)
+        
+        facebookLogin.layer.cornerRadius = 3
+        // 59,89,152
+        facebookLogin.backgroundColor = UIColor(red: 59.0 / 255.0, green: 89.0 / 255.0, blue: 152.0 / 255.0, alpha: 1.0)
+
+        //facebookLogin.backgroundColor = UIColor(red:0.23, green:0.35, blue:0.60, alpha:1.0)
     }
     
     
@@ -140,14 +144,6 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         // Dispose of any resources that can be recreated.
     }
     
- 
-    
- 
-    
-    
-  
-
-
 
 }
 

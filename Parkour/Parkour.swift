@@ -20,6 +20,7 @@ struct Parkour {
     var lieu: String
     var difficulte: String
     var wr: String
+    var image: String
 
     
     var dictionary: [String: Any] {
@@ -28,7 +29,8 @@ struct Parkour {
             "Nom": name,
             "Lieu": lieu,
             "Difficulté": difficulte,
-            "WR": wr
+            "WR": wr,
+            "image": image
         ]
     }
     
@@ -43,7 +45,9 @@ extension Parkour: DocumentSerializable {
               let name = dictionary["Nom"] as? String,
               let lieu = dictionary["Lieu"] as? String,
               let difficulte = dictionary["Difficulté"] as? String,
-              let wr = dictionary["WR"] as? String  else {
+              let wr = dictionary["WR"] as? String,
+              let image = dictionary["image"] as? String
+        else {
                 return nil
         }
             
@@ -52,7 +56,8 @@ extension Parkour: DocumentSerializable {
                   name: name,
                   lieu: lieu,
                   difficulte: difficulte,
-                  wr: wr
+                  wr: wr,
+                  image: image
         )
     }
     

@@ -12,6 +12,7 @@
 		600388F7202B28400008F6C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600388F6202B28400008F6C9 /* MainViewController.swift */; };
 		600388FA202B61010008F6C9 /* logo-blanc.png in Resources */ = {isa = PBXBuildFile; fileRef = 600388F8202B61000008F6C9 /* logo-blanc.png */; };
 		600388FB202B61010008F6C9 /* logo-noir.png in Resources */ = {isa = PBXBuildFile; fileRef = 600388F9202B61010008F6C9 /* logo-noir.png */; };
+		6023C5F2202CA83400B4C41E /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023C5F1202CA83400B4C41E /* LevelViewController.swift */; };
 		60409BA12029B1B700BB3935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60409BA02029B1B700BB3935 /* AppDelegate.swift */; };
 		60409BA32029B1B700BB3935 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60409BA22029B1B700BB3935 /* ViewController.swift */; };
 		60409BA62029B1B700BB3935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60409BA42029B1B700BB3935 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		600388F6202B28400008F6C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		600388F8202B61000008F6C9 /* logo-blanc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-blanc.png"; path = "../../../Downloads/logo-blanc.png"; sourceTree = "<group>"; };
 		600388F9202B61010008F6C9 /* logo-noir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-noir.png"; path = "../../../Downloads/logo-noir.png"; sourceTree = "<group>"; };
+		6023C5F1202CA83400B4C41E /* LevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
 		60409B9D2029B1B700BB3935 /* Parkour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parkour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60409BA02029B1B700BB3935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60409BA22029B1B700BB3935 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				60409BD22029BE0400BB3935 /* screenRegister.jpg */,
 				60409BA92029B1B700BB3935 /* LaunchScreen.storyboard */,
 				60409BAC2029B1B700BB3935 /* Info.plist */,
+				6023C5F1202CA83400B4C41E /* LevelViewController.swift */,
 			);
 			path = Parkour;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				60DA53FE202BE863009EFA59 /* CustomTableViewCell.swift in Sources */,
 				600388F7202B28400008F6C9 /* MainViewController.swift in Sources */,
 				60409BA32029B1B700BB3935 /* ViewController.swift in Sources */,
+				6023C5F2202CA83400B4C41E /* LevelViewController.swift in Sources */,
 				60DA53FA202BD78C009EFA59 /* ParkoursViewController.swift in Sources */,
 				60409BA12029B1B700BB3935 /* AppDelegate.swift in Sources */,
 				60DA53FC202BE331009EFA59 /* Parkour.swift in Sources */,
